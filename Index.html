@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Projetos HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="animate-title">Mini Projetos em JavaScript</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects">
+            <div class="container">
+                <h2>Projetos em Destaque</h2>
+
+                <div class="filter">
+                    <button class="filter-btn" data-category="all">Todos</button>
+                    <button class="filter-btn" data-category="ferramentas">Ferramentas</button>
+                    <button class="filter-btn" data-category="jogos">Jogos</button>
+                </div>
+
+                <div class="project-list">
+                    <div class="project-card" data-category="ferramentas">
+                        <img src="Projetos/img/imgp1.jpeg" alt="Projeto 1" class="project-icon">
+                        <h3>Projeto 1</h3>
+                        <p>Editor de Texto.</p>
+                        <button class="btn" onclick="irParaProjeto1()">Abrir Projeto</button>
+                        <a href="https://github.com/Marstefany/Projetos_em_JavaScript/tree/main/Editor%20de%20Texto" target="_blank" class="btn">Ver no GitHub</a>
+                    </div>
+                    <div class="project-card" data-category="ferramentas">
+                        <img src="icon2.png" alt="Projeto 2" class="project-icon">
+                        <h3>Projeto 2</h3>
+                        <p>Gerador de Glassmorphism.</p>
+                        <button class="btn" onclick="irParaProjeto2()">Abrir Projeto</button>
+                        <a href="https://github.com/Marstefany/Projetos_em_JavaScript/tree/main/Gerador%20de%20Glassmorphism" target="_blank" class="btn">Ver no GitHub</a>
+                    </div>
+                    <div class="project-card" data-category="ferramentas">
+                        <img src="icon3.png" alt="Projeto 3" class="project-icon">
+                        <h3>Projeto 3</h3>
+                        <p>App de Informações de Filmes.</p>
+                        <button class="btn" onclick="irParaProjeto3()">Abrir Projeto</button>
+                        <a href="https://github.com/Marstefany/Projetos_em_JavaScript/tree/main/Interface%20da%20info%20de%20um%20app%20de%20filmes" target="_blank" class="btn">Ver no GitHub</a>
+                    </div>
+                    <div class="project-card" data-category="jogos">
+                        <img src="icon4.png" alt="Projeto 4" class="project-icon">
+                        <h3>Projeto 4</h3>
+                        <p>Jogo da Cobrinha.</p>
+                        <button class="btn" onclick="irParaProjeto4()">Abrir Projeto</button>
+                        <a href="https://github.com/Marstefany/Projetos_em_JavaScript/tree/main/Jogo%20da%20cobrinha" target="_blank" class="btn">Ver no GitHub</a>
+                    </div>
+                    <div class="project-card" data-category="jogos">
+                        <img src="icon5.png" alt="Projeto 5" class="project-icon">
+                        <h3>Projeto 5</h3>
+                        <p>Sudoku.</p>
+                        <button class="btn" onclick="irParaProjeto5()">Abrir Projeto</button>
+                        <a href="https://github.com/Marstefany/Projetos_em_JavaScript/tree/main/Sudoku" target="_blank" class="btn">Ver no GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 - <a href="">Maria Stefany</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
