@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="shortcut icon" href="img/inspiration.png" type="image/x-icon"> 
+    <title>Criador de Glassmorphism </title> 
+</head>
+
+<body>
+
+    <div class="glass-preview"> <!-- Pré-visualização do efeito Glassmorphism -->
+        <div class="glass-preview-rectangle"></div> <!-- Retângulo que aplica o efeito -->
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <h1>Crie já seu Glassmorphism</h1> 
+            <div class="input-container">
+                <label for="blur">Blur :</label> <!-- Rótulo para o controle de desfoque -->
+                <input type="range" id="blur" min="0" max="30" value="10"> <!-- Controle deslizante para desfoque -->
+            </div>
+            <div class="input-container">
+                <label for="transparency">Transparência :</label> <!-- Rótulo para a transparência -->
+                <input type="range" id="transparency" min="0" max="1" step="0.01" value="0.7"> <!-- Controle deslizante para transparência -->
+            </div>
+            <div class="input-container">
+                <label for="color">Cor :</label> <!-- Rótulo para a escolha de cor -->
+                <input type="color" id="color" value="#000"> <!-- Seletor de cor -->
+            </div>
+            <div class="input-container">
+                <label for="outline">Contorno :</label> <!-- Rótulo para o contorno -->
+                <input type="range" id="outline" min="0" max="10" value="2"> <!-- Controle deslizante para contorno -->
+            </div>
+            <div class="input-container">
+                <label for="css-code"> Código CSS  :</label> <!-- Rótulo para a área de código CSS -->
+                <textarea id="css-code" readonly></textarea> <!-- Área de texto para mostrar o código CSS gerado -->
+            </div>
+            <button id="copy-button">Copie aqui</button> 
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+
+</html>

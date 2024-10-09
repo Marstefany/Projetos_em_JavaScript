@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="shortcut icon" href="img/game.png" type="image/x-icon">
+    <title>Snake Game</title>
+</head>
+
+<body>
+
+    <div class="wrapper"> <!-- Container principal do jogo -->
+        <div class="game-details"> <!-- Detalhes do jogo, como pontuação -->
+            <span class="score">Score: 0</span> <!-- Exibe a pontuação atual -->
+            <span class="high-score">High Score: 0</span> <!-- Exibe a pontuação mais alta -->
+        </div>
+
+        <div class="play-board"></div> <!-- Área de jogo -->
+
+        <div class="controls"> <!-- Controles do jogo -->
+            <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i> <!-- Botão para mover para a esquerda -->
+            <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i> <!-- Botão para mover para cima -->
+            <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i> <!-- Botão para mover para a direita -->
+            <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i> <!-- Botão para mover para baixo -->
+        </div>
+
+    </div>
+
+    <script src="index.js"></script> 
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif; /
+}
+
+body{
+    background-color: #64bbc1; 
+    background-image: 
+        radial-gradient(at 74% 7%, hsla(292, 99%, 79%, 1) 0px, transparent 50%),
+        radial-gradient(at 95% 36%, rgb(244, 148, 228) 0px, transparent 50%),
+        radial-gradient(at 87% 82%, rgb(196, 87, 250) 0px, transparent 50%),
+        radial-gradient(at 93% 26%, rgb(81, 145, 240) 0px, transparent 50%),
+        radial-gradient(at 81% 45%, hsla(187, 78%, 65%, 1) 0px, transparent 50%),
+        radial-gradient(at 25% 72%, hsla(221, 70%, 71%, 1) 0px, transparent 50%),
+        radial-gradient(at 95% 88%, hsla(272, 70%, 66%, 1) 0px, transparent 50%);
+    height: 100vh; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+.glass-preview{
+    margin: 20px auto; /* Margem para centralizar */
+    position: relative; /* Posição relativa para o ::before */
+    z-index: 1; /* Garantir que fique acima de outros elementos */
+    font-family: 'Niconne'; /* Fonte para o texto dentro do preview */
+}
+
+.glass-preview::before{
+    color: #fff;
+    font-size: 130px; 
+    position: absolute; /* Posição absoluta para centralizar */
+    z-index: -999; /* Colocar atrás do retângulo */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centralizar */
+}
+
+.glass-preview-rectangle{
+    background-color: rgba(0, 0, 0, 0.31); /* Cor de fundo com transparência */
+    width: 360px; /* Largura do retângulo */
+    height: 100px; /* Altura do retângulo */
+    padding: 0 20px; /* Espaçamento interno */
+    backdrop-filter: blur(1px); /* Efeito de desfoque no fundo */
+    -webkit-backdrop-filter: blur(1px); /* Suporte para Safari */
+    outline: 0px solid #000; /* Contorno inicial */
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transform: rotate(-2deg); 
+}
+
+.container{
+    width: 380px; 
+    background-color: rgba(0, 0, 0, 0.31); 
+    backdrop-filter: blur(1px); /* Efeito de desfoque no fundo */
+    -webkit-backdrop-filter: blur(1px); /* Suporte para Safari */
+    outline: 0px solid #000; /* Contorno inicial */
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto; /* Margem para centralizar */
+    padding: 10px 20px 20px; 
+}
+
+.content{
+    color: #fff; /* Cor do texto */
+}
+
+.content h1{
+    margin-top: 15px; 
+    text-align: center; 
+    font-size: 24px; 
+}
+
+.input-container{
+    margin: 10px 0; /* Margem acima e abaixo de cada input */
+}
+
+input[type="range"]{
+    width: 100%; /* Largura total do controle deslizante */
+    height: 5px; /* Altura do controle */
+    background: rgba(255, 255, 255, 0.2); /* Cor de fundo do controle */
+    border: none; 
+    border-radius: 5px;
+    appearance: none; /* Remover estilo padrão */
+    outline: none; /* Remover contorno */
+    margin-bottom: 10px; /* Margem abaixo do controle */
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    appearance: none; /* Remover estilo padrão do polegar */
+    background: rgba(255, 255, 255, 0.7); /* Cor do polegar */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Borda do polegar */
+    width: 15px; /* Largura do polegar */
+    height: 15px; /* Altura do polegar */
+    border-radius: 50%; /* Polegar arredondado */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+input[type="color"]{
+    width: 100%; /* Largura total do seletor de cor */
+    border: none; /* Sem borda */
+    outline: none; /* Remover contorno */
+    appearance: none; /* Remover estilo padrão */
+    background: transparent; /* Fundo transparente */
+}
+
+#css-code{
+    background-color: rgba(255, 255, 255, 0.15); /* Cor de fundo com transparência */
+    width: 360px;
+    height: 110px; 
+    padding: 10px; 
+    resize: none;
+    font-family: monospace;
+    color: #fff; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+    cursor: not-allowed; 
+    outline: none; 
+}
+
+#copy-button{
+    width: 100%; /* Largura total do botão */
+    padding: 10px; /* Espaçamento interno do botão */
+    margin-top: 5px; /* Margem acima do botão */
+    background: rgba(255, 255, 255, 0.2); /* Cor de fundo do botão */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Borda do botão */
+    border-radius: 5px; 
+    color: #fff; /* Cor do texto do botão */
+    font-weight: bold; 
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: all 0.3s ease; 
+}
+
+#copy-button:hover{
+    background-color: rgba(255, 255, 255, 0.4); 
+    border-color: rgba(255, 255, 255, 0.6); 
+}

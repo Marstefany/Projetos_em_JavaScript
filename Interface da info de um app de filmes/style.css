@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+
+body{
+    height: 100vh; /* Altura total da janela */
+    background: linear-gradient(#11012e 50%, #11012e 50%); /* Gradiente de fundo */
+}
+
+/* Estilo do contêiner principal */
+.container{
+    font-size: 16px; 
+    width: 90vw; /* Largura de 90% da viewport */
+    max-width: 37.5em; 
+    padding: 3em 1.8em; 
+    background-color: #1e293b; /* Cor de fundo do contêiner */
+    position: absolute; /* Posicionamento absoluto para centralizar */
+    transform: translate(-50%, -50%); /* Centraliza o contêiner */
+    top: 50%; 
+    left: 50%; 
+    border-radius: 0.6em; 
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2); 
+}
+
+/* Estilo do contêiner de busca */
+.search-container{
+    display: grid; /* Usando grid para layout */
+    grid-template-columns: 9fr 3fr; /* Definindo proporções das colunas */
+    gap: 1.2em; /* Espaçamento entre os elementos */
+}
+
+/* Estilo dos inputs e botões dentro do contêiner de busca */
+.search-container input, .search-container button{
+    font-size: 0.9em; /* Tamanho da fonte */
+    outline: none; /* Remove contorno padrão ao focar */
+    border-radius: 0.3em; 
+}
+
+/* Estilo do input de texto */
+.search-container input{
+    background-color: transparent; /* Fundo transparente */
+    border: 1px solid #a0a0a0; 
+    color: #fff; 
+    padding: 0.7em; 
+}
+
+/* Estilo do input de texto ao ser focado */
+.search-container input:focus{
+    border-color: #fff; /* Muda a cor da borda ao focar */
+}
+
+/* Estilo do botão de busca */
+.search-container button{
+    background-color: #ffb92a; /* Cor de fundo do botão */
+    border: none;
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+/* Estilo para o resultado da busca */
+#result{
+    color: #fff; /* Cor do texto */
+}
+
+/* Estilo do contêiner de informações do filme */
+.info{
+    position: relative; /* Posição relativa para elementos internos */
+    display: grid; /* Usando grid para layout */
+    grid-template-columns: 4fr 8fr; /* Proporção das colunas */
+    margin-top: 1.2em; 
+}
+
+/* Estilo para o pôster do filme */
+.poster{
+    width: 100%; /* Largura total */
+}
+
+/* Estilo para os títulos */
+h2{
+    text-align: center; /* Centraliza o texto */
+    font-size: 1.5em; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    letter-spacing: 0.06em; /* Espaçamento entre letras */
+}
+
+/* Estilo para a classificação do filme */
+.rating{
+    display: flex; /* Usando flexbox para layout */
+    align-items: center; /* Alinha itens verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 0.6em; /* Espaçamento entre os itens */
+    margin: 0.6em 0 0.9em 0; 
+}
+
+/* Estilo para as imagens de classificação */
+.rating img{
+    width: 1.2em; /* Largura das imagens */
+}
+
+/* Estilo para o texto da classificação */
+.rating h4{
+    display: inline-block; /* Mantém o bloco inline */
+    font-size: 1.1em; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+}
+
+/* Estilo para os detalhes do filme */
+.details{
+    display: flex; /* Usando flexbox para layout */
+    font-size: 0.95em; /* Tamanho da fonte */
+    gap: 1em; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza horizontalmente */
+    color: #a0a0a0; /* Cor do texto */
+    margin: 0.6em 0; /* Margem vertical */
+    font-weight: 300; /* Peso da fonte */
+}
+
+/* Estilo para o gênero do filme */
+.genre{
+    display: flex; /* Usando flexbox para layout */
+    justify-content: space-around; /* Distribui espaço entre itens */
+}
+
+/* Estilo dos gêneros individuais */
+.genre div{
+    border: 1px solid #a0a0a0; /* Borda cinza */
+    font-size: 0.75em; /* Tamanho da fonte */
+    padding: 0.4em 1.6em; /* Preenchimento interno */
+    border-radius: 0.4em; /* Bordas arredondadas */
+    font-weight: 300; /* Peso da fonte */
+}
+
+/* Estilo para subtítulos */
+h3{
+    font-weight: 500; /* Peso da fonte */
+    margin-top: 1.2em; /* Margem superior */
+}
+
+/* Estilo para parágrafos */
+p{
+    font-size: 0.9em; /* Tamanho da fonte */
+    font-weight: 300; /* Peso da fonte */
+    line-height: 1.8em; /* Altura da linha */
+    text-align: justify; /* Justifica o texto */
+    color: #a0a0a0; /* Cor do texto */
+}
+
+/* Estilo para mensagens */
+.msg{
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos responsivos para telas menores */
+@media screen and (max-width: 600px) {
+    .container{
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+    .poster{
+        margin: auto; /* Centraliza */
+        width: auto; /* Largura automática */
+        max-height: 10.8em; /* Altura máxima */
+    }
+
+    .info{
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+}

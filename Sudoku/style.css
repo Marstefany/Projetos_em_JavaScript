@@ -1,0 +1,79 @@
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center; 
+    background: #baf5e2; 
+    display: flex; 
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    flex-direction: column; /* Organiza os itens em coluna */
+    height: 100vh; /* Altura total da visualização */
+}
+
+h1{
+    font-weight: 500; /* Define o peso da fonte do título */
+}
+
+.sudoku-container{
+    margin-top: 20px; /* Espaço acima do container do Sudoku */
+    display: flex; /* Usa flexbox para centralizar o grid */
+    justify-content: center; /* Centraliza o grid horizontalmente */
+}
+
+table{
+    border-collapse: collapse; /* Remove espaços entre as bordas da tabela */
+    border: 4px solid #000; /* Borda da tabela */
+}
+
+.cell{
+    width: 40px; /* Largura da célula */
+    height: 40px; /* Altura da célula */
+    text-align: center; /* Alinha texto ao centro */
+    font-size: 20px; /* Tamanho da fonte */
+    border: 1px solid #02805a; /* Borda das células */
+    transition: all 0.3s ease-in-out; /* Transição suave para alterações */
+}
+
+table tr:nth-child(3n) td,
+table tr:nth-child(3n+3) td{
+    border-bottom: 2px solid #000; /* Borda mais grossa para linhas a cada 3 */
+}
+
+table td:nth-child(3n){
+    border-right: 2px solid #000; /* Borda mais grossa para colunas a cada 3 */
+}
+
+input{
+    outline: none; /* Remove contorno padrão do input */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none; /* Remove os botões de incremento */
+    margin: 0; /* Remove margens */
+}
+
+button{
+    margin-top: 20px; /* Espaço acima do botão */
+    padding: 10px 20px; /* Preenchimento do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    background-color: #039be5; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove bordas do botão */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: all 0.3s ease; /* Transição suave para alterações */
+}
+
+button:hover{
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.solved{
+    background-color: #66f3bf; /* Cor de fundo para células resolvidas */
+    transition: all 0.2s ease-in-out; /* Transição suave para células resolvidas */
+}

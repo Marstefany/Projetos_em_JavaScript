@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> <!-- Estilos do Font Awesome -->
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="shortcut icon" href="img/text.png" type="image/x-icon"> 
+    <title> Editor de Texto</title> 
+
+<body>
+
+    <div class="container"> <!-- Container principal -->
+        <div class="options"> <!-- Área de opções de formatação -->
+            <!-- Botões para formatação de texto -->
+            <button id="bold" class="option-button format">
+                <i class="fa-solid fa-bold"></i> <!-- Icon negrito -->
+            </button>
+            <button id="superscript" class="option-button script">
+                <i class="fa-solid fa-superscript"></i> <!-- Icon sobrescrito -->
+            </button>
+            <button id="subscript" class="option-button script">
+                <i class="fa-solid fa-subscript"></i> <!-- Icon subscrito -->
+            </button>
+
+            <!-- Botões para listas -->
+            <button id="insertOrderedList" class="option-button">
+                <div class="fa-solid fa-list-ol"></div> <!--  lista ordenada -->
+            </button>
+            <button id="insertUnorderedList" class="option-button">
+                <i class="fa-solid fa-list"></i> <!--  lista não ordenada -->
+            </button>
+
+            <!-- Botões para desfazer e refazer -->
+            <button id="undo" class="option-button">
+                <i class="fa-solid fa-rotate-left"></i> <!-- Icon de desfazer -->
+            </button>
+            <button id="redo" class="option-button">
+                <i class="fa-solid fa-rotate-right"></i> <!-- Icon para refazer -->
+            </button>
+
+            <!-- Botões para criar e remover links -->
+            <button id="createLink" class="adv-option-button">
+                <i class="fa fa-link"></i> <!-- Ícone para criar link -->
+            </button>
+            <button id="unlink" class="option-button">
+                <i class="fa fa-unlink"></i> <!-- Ícone para remover link -->
+            </button>
+
+            <!-- Botões de alinhamento -->
+            <button id="justifyLeft" class="option-button align">
+                <i class="fa-solid fa-align-left"></i> <!-- cone para alinhamento à esquerda -->
+            </button>
+            <button id="justifyCenter" class="option-button align">
+                <i class="fa-solid fa-align-center"></i> <!-- icone para centralizar -->
+            </button>
+            <button id="justifyRight" class="option-button align">
+                <i class="fa-solid fa-align-right"></i> 
+            </button>
+            <button id="justifyFull" class="option-button align">
+                <i class="fa-solid fa-align-justify"></i> <!-- icone para justificar -->
+            </button>
+
+            <!-- Botões de recuo -->
+            <button id="indent" class="option-button spacing">
+                <i class="fa-solid fa-indent"></i> <!-- Ícone para recuo -->
+            </button>
+            <button id="outdent" class="option-button spacing">
+                <i class="fa-solid fa-outdent"></i> <!-- Ícone para diminuir -->
+            </button>
+
+            <!-- Seletores para formatação avançada -->
+            <select id="formatBlock" class="adv-option-button">
+                <option value="H1">H1</option>
+                <option value="H2">H2</option>
+                <option value="H3">H3</option>
+                <option value="H4">H4</option>
+                <option value="H5">H5</option>
+                <option value="H6">H6</option>
+            </select>
+            <select id="fontName" class="adv-option-button"></select>
+            <select id="fontSize" class="adv-option-button"></select>
+
+            <!-- Seletores de cor -->
+            <div class="input-wrapper">
+                <input type="color" id="foreColor" class="adv-option-button"> 
+                <label for="foreColor">Cor da fonte</label>
+            </div>
+            <div class="input-wrapper">
+                <input type="color" id="backColor" class="adv-option-button"> 
+                <label for="backColor">Cor do fundo</label>
+            </div>
+
+        </div>
+        <div id="text-input" contenteditable="true"></div> <!-- Área de texto editável -->
+    </div>
+
+    <script src="script.js"></script> 
+
+</body>
+
+</html>

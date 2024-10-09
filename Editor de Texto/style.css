@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); 
+
+* {
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #ed2ddd; 
+}
+
+.container {
+    background-color: #fff; 
+    width: 90vmin; /* Largura relativa */
+    padding: 50px 30px; /* Espaçamento interno */
+    position: absolute; /* Posição absoluta para centralização */
+    transform: translate(-50%, -50%); /* Centraliza o container */
+    left: 50%; /* Alinha à esquerda */
+    top: 50%; /* Alinha ao topo */
+    border-radius: 10px; 
+    box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2); 
+}
+
+.options {
+    display: flex; /* Layout flexível para opções */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    align-items: center; /* Alinha itens verticalmente */
+    gap: 15px; /* Espaçamento entre itens */
+}
+
+button {
+    width: 28px; 
+    height: 28px; 
+    display: grid; /* Utiliza grid para centralizar ícones */
+    place-items: center; 
+    border-radius: 3px; 
+    border: none; 
+    background-color: #fff; /* Cor de fundo do botão */
+    outline: none; /* Remove contorno */
+    color: #020929; /* Cor do ícone */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+}
+
+select {
+    padding: 7px; 
+    border: 1px solid #020929; /* Borda do seletor */
+    border-radius: 3px; 
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+.options label,
+.options select {
+    font-family: 'Poppins', sans-serif; 
+}
+
+input[type="color"] {
+    -webkit-appearance: none; /* Remove aparência padrão no Chrome */
+    -moz-appearance: none; /* Remove aparência padrão no Firefox */
+    appearance: none; /* Remove aparência padrão */
+    background-color: transparent; /* Fundo transparente */
+    width: 40px; /* Largura do seletor de cor */
+    height: 28px; /* Altura do seletor de cor */
+    border: none; /* Remove bordas */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 15px; /* Bordas arredondadas do seletor */
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #020929; /* Sombra ao redor do seletor */
+}
+
+input[type="color"]::-moz-color-swatch {
+    border-radius: 15px; /* Bordas arredondadas do seletor */
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #020929; /* Sombra ao redor do seletor */
+}
+
+#text-input {
+    margin-top: 10px; /* Espaçamento acima da área de texto */
+    border: 1px solid #ddd; /* Borda da área de texto */
+    padding: 20px; 
+    height: 50vh; /* Altura da área de texto */
+}
+
+.active {
+    background-color: #e0e9ff; 
+}
